@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone https://github.com/helenhuang29/python_demo
+          git clone git clone https://$GITHUB_TOKEN@github.com/helenhuang29/python_demo.git
           cd python_demo
       - name: install pytest
         run: pip install pytest
