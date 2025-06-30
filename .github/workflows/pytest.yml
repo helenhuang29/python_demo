@@ -20,7 +20,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: clone repository
         run: |
-          git clone https://github.com/helenhuang29/python_demo
+          git clone https://github.com/helenhuang29/python_demo.git
           cd github-actions-demo
       - name: install pytest
         run: pip install pytest
