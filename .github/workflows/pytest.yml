@@ -19,6 +19,8 @@ jobs:
   
       # Runs a single command using the runners shell
       - name: clone repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git clone https://github.com/helenhuang29/python_demo.git
           cd github-actions-demo
