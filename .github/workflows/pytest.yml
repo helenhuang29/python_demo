@@ -26,4 +26,6 @@ jobs:
         run: pytest
       - name: check the env
         run: env
+      - name: check the git hub repo
+        run: echo $GITHUB_REPOSITORY
      
